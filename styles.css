@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  background-color: #002b5b;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+.content-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  margin: auto;
+  height: 50%;
+  max-width: 70%;
+  top: 33%;
+  background-color: #8fe3cfc6;
+  box-shadow: 0px 0px 20px 0px #666;
+}
+.form-wrapper {
+  position: relative;
+  height: 60%;
+  width: 30%;
+  bottom: 200px;
+  left: 400px;
+  background-color: white;
+  z-index: 10;
+  /* display: flex;
+  flex-direction: column; */
+}
+.right-content {
+  margin-right: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.right-content button {
+  padding: 20px 50px;
+  background-color: transparent;
+  font-size: 18px;
+  color: #256d85;
+  line-height: 22px;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  border: 2px solid #256d85;
+}
+.right-content button:hover {
+  background-color: #2b4865;
+  color: white;
+}
+.right-content p {
+  width: 100%;
+  max-width: 300px;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  line-height: 24px;
+  margin-bottom: 20px;
+  color: #256d85;
+}
+.form-wrapper {
+  box-shadow: 0px 0px 20px 0px #666;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  position: relative;
+}
+form input {
+  color: #256d85;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+  padding: 20px 20px;
+  font-size: 18px;
+  /* border-radius: 5px; */
+  border: 0 solid #256d85;
+  border-bottom: 2px solid #256d85;
+  transition: border-bottom, color 2s;
+  outline-style: hidden;
+  outline-color: #256d85;
+}
+.placeholder {
+  position: relative;
+  top: -50px;
+  left: 8px;
+  font-size: px;
+  padding: 0px 5px;
+  color: #256d85;
+  transition: 1s;
+  pointer-events: none;
+}
+form input:focus + .placeholder {
+  top: -10px;
+  color: #04aa6d;
+  background-color: #fff;
+}
+form input:focus {
+  border-bottom: #2b4865;
+  background-color: #8fe3cf4a;
+}
+.btn {
+  padding: 20px 50px;
+  background-color: #2b4865;
+  font-size: 18px;
+  color: white;
+  line-height: 22px;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  border: 2px solid #256d85;
+}
+.btn:hover {
+  background-color: #256d85;
+}
+::placeholder {
+  color: #256d85;
+  opacity: 1;
+}
